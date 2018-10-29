@@ -16,7 +16,6 @@
 │
 └───Screenshots    -> Images of the face
 
-
 ## Log
 ### 0.0.2b 28.10.2018
 * Minutes ticks added
@@ -28,6 +27,12 @@
 
 ### 0.0.0b 28.10.2018 (private release)
 * First test with circle, minutes and seconds hands
+
+## Prerequisites (to run Eclipse project)
+### Eclipse IDE for Java Developers can be found here :
+https://www.eclipse.org/downloads/packages/
+### Garmin SDK can be downloaded from :
+https://developer.garmin.com/connect-iq/sdk/
 
 ## Developper infos
 - Author : Jimmy Caille
