@@ -1,5 +1,8 @@
 # AnalogEdge : Garmin Watchface
 
+## Screenshots
+![alt text](https://raw.githubusercontent.com/jimmycaille/AnalogEdge/master/Screenshots/AnalogEdge_2.png "Screenshot 1")
+
 ## Compatible devices
 * Vivoactive 3
 * Vivoactive 3 Music
