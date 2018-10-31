@@ -17,19 +17,19 @@
 - Screenshots    -> Images of the face
 
 ## Log
-###0.0.8b
+### 0.0.8b
 *Dot sizes can be changed in settings
 
-###0.0.6b 31.10.2018 (0.0.7b problem with upload)
+### 0.0.6b 31.10.2018 (0.0.7b problem with upload)
 * Back/Fore-ground colors and hands width can be changed in settings
 
-###0.0.5b 31.10.2018
+### 0.0.5b 31.10.2018
 * 3 points added to show phone connectivity, alarms enabled and notifications
 
-###0.0.4b 29.10.2018
+### 0.0.4b 29.10.2018
 * Point representing the seconds in the middle (works only in power mode)
 
-###0.0.3b 29.10.2018
+### 0.0.3b 29.10.2018
 * HR/Temp/Pressure/altitude history successfully displayed in console (permission required)
 
 ### 0.0.2b 28.10.2018
