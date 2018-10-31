@@ -15,94 +15,146 @@
 <entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeApp.mc" id="9" lineNum="20" pc="268435609" symbol="getInitialView"/>
 <entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeApp.mc" id="10" lineNum="24" pc="268435647" symbol="onSettingsChanged"/>
 <entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeApp.mc" id="10" lineNum="25" pc="268435651" symbol="onSettingsChanged"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="12" lineNum="10" pc="268435668" symbol="initialize"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="12" lineNum="11" pc="268435672" symbol="initialize"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="24" pc="268435691" symbol="onLayout"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="25" pc="268435695" symbol="onLayout"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="14" lineNum="31" pc="268435733" symbol="onShow"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="35" pc="268435738" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="37" pc="268435742" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="63" pc="268435759" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="65" pc="268435779" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="66" pc="268435791" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="67" pc="268435827" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="70" pc="268435854" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="71" pc="268435864" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="72" pc="268435874" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="75" pc="268435881" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="76" pc="268435899" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="78" pc="268435930" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="79" pc="268435937" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="80" pc="268435944" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="81" pc="268435988" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="82" pc="268436032" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="83" pc="268436076" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="84" pc="268436120" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="88" pc="268436153" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="89" pc="268436171" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="91" pc="268436223" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="92" pc="268436230" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="93" pc="268436237" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="94" pc="268436281" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="95" pc="268436325" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="96" pc="268436369" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="97" pc="268436413" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="102" pc="268436446" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="103" pc="268436464" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="104" pc="268436471" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="105" pc="268436478" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="106" pc="268436522" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="107" pc="268436566" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="108" pc="268436610" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="109" pc="268436654" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="114" pc="268436687" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="115" pc="268436705" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="116" pc="268436712" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="117" pc="268436719" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="118" pc="268436763" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="119" pc="268436807" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="120" pc="268436851" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="121" pc="268436895" symbol="onUpdate"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="16" lineNum="128" pc="268436929" symbol="onHide"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="17" lineNum="132" pc="268436934" symbol="onExitSleep"/>
-<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="18" lineNum="136" pc="268436939" symbol="onEnterSleep"/>
-<entry filename="Rez" id="25" lineNum="29" pc="268436944" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="33" pc="268436956" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="34" pc="268436980" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="35" pc="268437151" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="36" pc="268437184" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="37" pc="268437236" symbol="WatchFace"/>
-<entry filename="Rez" id="25" lineNum="40" pc="268437282" symbol="WatchFace"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="12" lineNum="13" pc="268435668" symbol="initialize"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="12" lineNum="14" pc="268435672" symbol="initialize"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="12" lineNum="15" pc="268435690" symbol="initialize"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="18" pc="268435712" symbol="getHRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="20" pc="268435716" symbol="getHRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="21" pc="268435759" symbol="getHRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="13" lineNum="23" pc="268435792" symbol="getHRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="14" lineNum="25" pc="268435795" symbol="getELIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="14" lineNum="27" pc="268435799" symbol="getELIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="14" lineNum="28" pc="268435842" symbol="getELIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="14" lineNum="30" pc="268435875" symbol="getELIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="32" pc="268435878" symbol="getPRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="34" pc="268435882" symbol="getPRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="35" pc="268435925" symbol="getPRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="15" lineNum="37" pc="268435958" symbol="getPRIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="16" lineNum="39" pc="268435961" symbol="getTPIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="16" lineNum="41" pc="268435965" symbol="getTPIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="16" lineNum="42" pc="268436008" symbol="getTPIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="16" lineNum="44" pc="268436041" symbol="getTPIterator"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="17" lineNum="49" pc="268436044" symbol="onLayout"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="17" lineNum="50" pc="268436048" symbol="onLayout"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="17" lineNum="51" pc="268436085" symbol="onLayout"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="18" lineNum="57" pc="268436107" symbol="onShow"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="18" lineNum="58" pc="268436111" symbol="onShow"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="62" pc="268436133" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="65" pc="268436137" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="67" pc="268436154" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="155" pc="268436214" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="157" pc="268436234" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="158" pc="268436246" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="159" pc="268436299" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="182" pc="268436326" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="183" pc="268436368" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="184" pc="268436407" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="185" pc="268436449" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="187" pc="268436488" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="189" pc="268436524" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="191" pc="268436617" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="192" pc="268436647" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="194" pc="268436686" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="196" pc="268436722" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="198" pc="268436773" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="199" pc="268436803" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="201" pc="268436842" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="203" pc="268436878" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="206" pc="268436971" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="208" pc="268437024" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="209" pc="268437034" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="210" pc="268437044" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="216" pc="268437051" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="217" pc="268437069" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="218" pc="268437076" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="219" pc="268437083" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="220" pc="268437127" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="221" pc="268437171" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="222" pc="268437215" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="223" pc="268437259" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="228" pc="268437292" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="229" pc="268437310" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="230" pc="268437317" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="231" pc="268437324" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="232" pc="268437368" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="233" pc="268437412" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="234" pc="268437456" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="235" pc="268437500" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="238" pc="268437533" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="246" pc="268437574" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="248" pc="268437602" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="249" pc="268437609" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="250" pc="268437616" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="251" pc="268437660" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="252" pc="268437704" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="253" pc="268437748" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="254" pc="268437792" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="259" pc="268437812" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="261" pc="268437861" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="262" pc="268437868" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="263" pc="268437875" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="264" pc="268437919" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="265" pc="268437963" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="266" pc="268438007" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="267" pc="268438051" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="19" lineNum="269" pc="268438071" symbol="onUpdate"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="20" lineNum="275" pc="268438089" symbol="onHide"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="20" lineNum="276" pc="268438093" symbol="onHide"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="21" lineNum="280" pc="268438115" symbol="onExitSleep"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="21" lineNum="281" pc="268438119" symbol="onExitSleep"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="22" lineNum="285" pc="268438141" symbol="onEnterSleep"/>
+<entry filename="D:\\git\\AnalogEdge\\AnalogEdge\\source\\AnalogEdgeView.mc" id="22" lineNum="286" pc="268438145" symbol="onEnterSleep"/>
+<entry filename="Rez" id="29" lineNum="40" pc="268438167" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="44" pc="268438179" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="45" pc="268438203" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="46" pc="268438374" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="47" pc="268438407" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="48" pc="268438459" symbol="WatchFace"/>
+<entry filename="Rez" id="29" lineNum="51" pc="268438505" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388644" module="true" symbol="System"/>
+<entry id="8389781" module="true" symbol="SensorHistory"/>
+<entry field="true" id="27" symbol="eight"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="15" symbol="ColorBlue"/>
+<entry field="true" id="22" symbol="seven"/>
+<entry field="true" id="8390485" symbol="bluetooth"/>
+<entry field="true" id="16" symbol="ColorBlue"/>
+<entry field="true" id="20" symbol="one"/>
+<entry id="35" method="true" symbol="getHRIterator"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="22" symbol="ColorWhite"/>
+<entry field="true" id="33" symbol="ColorWhite"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389068" method="true" symbol="draw"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389802" method="true" symbol="getElevationHistory"/>
 <entry field="true" id="21" symbol="ColorBlack"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry field="true" id="16" symbol="ColorRed"/>
-<entry field="true" id="17" symbol="ForegroundColorTitle"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="28" symbol="ColorRed"/>
+<entry field="true" id="29" symbol="ForegroundColorTitle"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="23" symbol="AppName"/>
+<entry field="true" id="26" symbol="AppName"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="34" symbol="five"/>
+<entry field="true" id="23" symbol="DotsSizeTitle"/>
+<entry field="true" id="24" symbol="two"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry field="true" id="13" symbol="LauncherIcon"/>
+<entry field="true" id="25" symbol="three"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry id="8389801" method="true" symbol="getPressureHistory"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="31" symbol="four"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="10" object="true" symbol="AnalogEdgeView"/>
 <entry field="true" id="19" symbol="ColorDarkGray"/>
@@ -110,16 +162,25 @@
 <entry id="9" object="true" symbol="AnalogEdgeApp"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry id="8389348" symbol="font"/>
+<entry field="true" id="32" symbol="ten"/>
 <entry field="true" id="14" symbol="ColorLightGray"/>
 <entry id="8389347" symbol="color"/>
-<entry field="true" id="18" symbol="BackgroundColorTitle"/>
+<entry field="true" id="17" symbol="BackgroundColorTitle"/>
+<entry id="36" method="true" symbol="getELIterator"/>
+<entry id="37" method="true" symbol="getPRIterator"/>
+<entry field="true" id="30" symbol="HandsWidthTitle"/>
+<entry id="8389702" method="true" symbol="getHeartRateHistory"/>
 <entry id="12" module="true" symbol="Layouts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="20" symbol="MilitaryFormatTitle"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="11" module="true" symbol="Menus"/>
+<entry id="8389800" method="true" symbol="getTemperatureHistory"/>
+<entry field="true" id="18" symbol="six"/>
+<entry field="true" id="15" symbol="nine"/>
+<entry id="38" method="true" symbol="getTPIterator"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
@@ -127,46 +188,44 @@
 <entry endPc="268435572" name="dc" stackId="1" startPc="268435502"/>
 <entry endPc="268435600" name="state" stackId="1" startPc="268435595"/>
 <entry endPc="268435605" name="state" stackId="1" startPc="268435600"/>
-<entry endPc="268435733" name="dc" stackId="1" startPc="268435691"/>
-<entry endPc="268436140" name="r2" stackId="9" startPc="268435899"/>
-<entry endPc="268436140" name="x2" stackId="12" startPc="268435899"/>
-<entry endPc="268436140" name="r1" stackId="8" startPc="268435899"/>
-<entry endPc="268436140" name="x1" stackId="10" startPc="268435899"/>
-<entry endPc="268436140" name="y2" stackId="13" startPc="268435899"/>
-<entry endPc="268436140" name="y1" stackId="11" startPc="268435899"/>
-<entry endPc="268436140" name="deg" stackId="7" startPc="268435899"/>
-<entry endPc="268436153" name="i" stackId="6" startPc="268435899"/>
-<entry endPc="268436433" name="x4" stackId="20" startPc="268436171"/>
-<entry endPc="268436433" name="r3" stackId="16" startPc="268436171"/>
-<entry endPc="268436433" name="x3" stackId="18" startPc="268436171"/>
-<entry endPc="268436433" name="deg2" stackId="15" startPc="268436171"/>
-<entry endPc="268436433" name="y4" stackId="21" startPc="268436171"/>
-<entry endPc="268436433" name="y3" stackId="19" startPc="268436171"/>
-<entry endPc="268436433" name="r4" stackId="17" startPc="268436171"/>
-<entry endPc="268436446" name="i" stackId="14" startPc="268436171"/>
-<entry endPc="268436674" name="y6" stackId="28" startPc="268436464"/>
-<entry endPc="268436674" name="y5" stackId="26" startPc="268436464"/>
-<entry endPc="268436674" name="r6" stackId="24" startPc="268436464"/>
-<entry endPc="268436674" name="x6" stackId="27" startPc="268436464"/>
-<entry endPc="268436674" name="r5" stackId="23" startPc="268436464"/>
-<entry endPc="268436674" name="x5" stackId="25" startPc="268436464"/>
-<entry endPc="268436687" name="i" stackId="22" startPc="268436464"/>
-<entry endPc="268436915" name="r8" stackId="31" startPc="268436705"/>
-<entry endPc="268436915" name="x8" stackId="34" startPc="268436705"/>
-<entry endPc="268436915" name="r7" stackId="30" startPc="268436705"/>
-<entry endPc="268436915" name="x7" stackId="32" startPc="268436705"/>
-<entry endPc="268436915" name="y8" stackId="35" startPc="268436705"/>
-<entry endPc="268436915" name="y7" stackId="33" startPc="268436705"/>
-<entry endPc="268436928" name="i" stackId="29" startPc="268436705"/>
-<entry endPc="268436928" name="m" stackId="4" startPc="268435742"/>
-<entry endPc="268436928" name="h" stackId="3" startPc="268435742"/>
-<entry endPc="268436928" name="clockTime" stackId="2" startPc="268435742"/>
-<entry endPc="268436928" name="c" stackId="5" startPc="268435742"/>
-<entry endPc="268436929" name="dc" stackId="1" startPc="268435738"/>
-<entry endPc="268437309" name="rez_cmp_local_bitmap_TimeLabel" stackId="3" startPc="268436956"/>
-<entry endPc="268437309" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="4" startPc="268436956"/>
-<entry endPc="268437309" name="rez_cmp_local_custom_drawable_87249221910980873831" stackId="2" startPc="268436956"/>
-<entry endPc="268437310" name="dc" stackId="1" startPc="268436944"/>
+<entry endPc="268436107" name="dc" stackId="1" startPc="268436044"/>
+<entry endPc="268437279" name="y6" stackId="12" startPc="268437069"/>
+<entry endPc="268437279" name="y5" stackId="10" startPc="268437069"/>
+<entry endPc="268437279" name="r6" stackId="8" startPc="268437069"/>
+<entry endPc="268437279" name="x6" stackId="11" startPc="268437069"/>
+<entry endPc="268437279" name="r5" stackId="7" startPc="268437069"/>
+<entry endPc="268437279" name="x5" stackId="9" startPc="268437069"/>
+<entry endPc="268437292" name="i" stackId="6" startPc="268437069"/>
+<entry endPc="268437520" name="r8" stackId="15" startPc="268437310"/>
+<entry endPc="268437520" name="x8" stackId="18" startPc="268437310"/>
+<entry endPc="268437520" name="r7" stackId="14" startPc="268437310"/>
+<entry endPc="268437520" name="x7" stackId="16" startPc="268437310"/>
+<entry endPc="268437520" name="y8" stackId="19" startPc="268437310"/>
+<entry endPc="268437520" name="y7" stackId="17" startPc="268437310"/>
+<entry endPc="268437533" name="i" stackId="13" startPc="268437310"/>
+<entry endPc="268438088" name="y4" stackId="33" startPc="268436137"/>
+<entry endPc="268438088" name="y3" stackId="31" startPc="268436137"/>
+<entry endPc="268438088" name="y2" stackId="26" startPc="268436137"/>
+<entry endPc="268438088" name="y1" stackId="24" startPc="268436137"/>
+<entry endPc="268438088" name="deg" stackId="20" startPc="268436137"/>
+<entry endPc="268438088" name="clockTime" stackId="2" startPc="268436137"/>
+<entry endPc="268438088" name="m" stackId="4" startPc="268436137"/>
+<entry endPc="268438088" name="r4" stackId="29" startPc="268436137"/>
+<entry endPc="268438088" name="r3" stackId="28" startPc="268436137"/>
+<entry endPc="268438088" name="x4" stackId="32" startPc="268436137"/>
+<entry endPc="268438088" name="r2" stackId="22" startPc="268436137"/>
+<entry endPc="268438088" name="deg2" stackId="27" startPc="268436137"/>
+<entry endPc="268438088" name="r1" stackId="21" startPc="268436137"/>
+<entry endPc="268438088" name="x3" stackId="30" startPc="268436137"/>
+<entry endPc="268438088" name="h" stackId="3" startPc="268436137"/>
+<entry endPc="268438088" name="x2" stackId="25" startPc="268436137"/>
+<entry endPc="268438088" name="x1" stackId="23" startPc="268436137"/>
+<entry endPc="268438088" name="c" stackId="5" startPc="268436137"/>
+<entry endPc="268438089" name="dc" stackId="1" startPc="268436133"/>
+<entry endPc="268438532" name="rez_cmp_local_bitmap_TimeLabel" stackId="3" startPc="268438179"/>
+<entry endPc="268438532" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="4" startPc="268438179"/>
+<entry endPc="268438532" name="rez_cmp_local_custom_drawable_18527255961699409622" stackId="2" startPc="268438179"/>
+<entry endPc="268438533" name="dc" stackId="1" startPc="268438167"/>
 </localVars>
 <annotations/>
 <functions>
@@ -195,6 +254,18 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="AnalogEdgeView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getHRIterator" parent="AnalogEdgeView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getELIterator" parent="AnalogEdgeView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getPRIterator" parent="AnalogEdgeView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTPIterator" parent="AnalogEdgeView">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onLayout" parent="AnalogEdgeView">
@@ -232,7 +303,7 @@
 <dataEntry offset="417" parentId="Rez" symbolId="JsonData" type="module"/>
 <dataEntry offset="448" parentId="Rez" symbolId="Layouts" type="module"/>
 <dataEntry offset="487" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="598" parentId="globals" symbolId="AnalogEdgeView" type="class"/>
-<dataEntry offset="693" parentId="globals" symbolId="AnalogEdgeApp" type="class"/>
+<dataEntry offset="686" parentId="globals" symbolId="AnalogEdgeView" type="class"/>
+<dataEntry offset="813" parentId="globals" symbolId="AnalogEdgeApp" type="class"/>
 </dataEntryOffsetMappings>
 </debugInfo>

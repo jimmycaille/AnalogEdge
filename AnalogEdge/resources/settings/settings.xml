@@ -1,5 +1,6 @@
 <settings>
 
+    
     <setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
         <settingConfig type="list">
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
@@ -17,9 +18,41 @@
             <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
         </settingConfig>
     </setting>
-
+    
+    
+    <setting propertyKey="@Properties.HandsWidth" title="@Strings.HandsWidthTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.one</listEntry>
+            <listEntry value="2">@Strings.two</listEntry>
+            <listEntry value="3">@Strings.three</listEntry>
+            <listEntry value="4">@Strings.four</listEntry>
+            <listEntry value="5">@Strings.five</listEntry>
+            <listEntry value="6">@Strings.six</listEntry>
+            <listEntry value="7">@Strings.seven</listEntry>
+            <listEntry value="8">@Strings.eight</listEntry>
+            <listEntry value="9">@Strings.nine</listEntry>
+            <listEntry value="10">@Strings.ten</listEntry>
+        </settingConfig>
+    </setting>
+    
+    
+    <setting propertyKey="@Properties.DotsSize" title="@Strings.DotsSizeTitle">
+        <settingConfig type="list">
+            <listEntry value="2">@Strings.two</listEntry>
+            <listEntry value="3">@Strings.three</listEntry>
+            <listEntry value="4">@Strings.four</listEntry>
+            <listEntry value="5">@Strings.five</listEntry>
+            <listEntry value="6">@Strings.six</listEntry>
+            <listEntry value="7">@Strings.seven</listEntry>
+            <listEntry value="8">@Strings.eight</listEntry>
+            <listEntry value="9">@Strings.nine</listEntry>
+            <listEntry value="10">@Strings.ten</listEntry>
+        </settingConfig>
+    </setting>
+	<!--
     <setting propertyKey="@Properties.UseMilitaryFormat" title="@Strings.MilitaryFormatTitle">
         <settingConfig type="boolean" />
     </setting>
+    -->
 
 </settings>

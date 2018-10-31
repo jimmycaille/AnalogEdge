@@ -12,7 +12,7 @@
 │
 ├───AnalogEdge     -> Eclipse project
 │
-├───Build          -> Each release
+├───Builds         -> Each release
 │
 └───Screenshots    -> Images of the face
 

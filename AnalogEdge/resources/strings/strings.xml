@@ -4,8 +4,22 @@
 
     <string id="BackgroundColorTitle">Background Color</string>
     <string id="ForegroundColorTitle">Foreground Color</string>
-    <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
+    <string id="HandsWidthTitle">Hands width (pixels)</string>
+    <string id="DotsSizeTitle">Dot sizes (phone connected, alarms and notifications)</string>
+    <!-- <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string> -->
 
+
+    <string id="one">1</string>
+    <string id="two">2</string>
+    <string id="three">3</string>
+    <string id="four">4</string>
+    <string id="five">5</string>
+    <string id="six">6</string>
+    <string id="seven">7</string>
+    <string id="eight">8</string>
+    <string id="nine">9</string>
+    <string id="ten">10</string>
+    
     <string id="ColorBlack">Black</string>
     <string id="ColorDarkGray">Dark Gray</string>
     <string id="ColorLightGray">Light Gray</string>
