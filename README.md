@@ -18,7 +18,7 @@
 
 ## Log
 ### 0.0.8b
-*Dot sizes can be changed in settings
+* Dot sizes can be changed in settings
 
 ### 0.0.6b 31.10.2018 (0.0.7b problem with upload)
 * Back/Fore-ground colors and hands width can be changed in settings
