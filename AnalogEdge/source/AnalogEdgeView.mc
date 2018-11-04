@@ -9,7 +9,7 @@ using Toybox.Time.Gregorian;
 using Toybox.ActivityMonitor;
 
 class AnalogEdgeView extends WatchUi.WatchFace {
-
+	var sleeping=false;
     function initialize() {
         WatchFace.initialize();
     	System.println("initialize()");
@@ -156,7 +156,8 @@ class AnalogEdgeView extends WatchUi.WatchFace {
         
         dc.clear();
 		dc.setColor(Application.getApp().getProperty("ForegroundColor"),Graphics.COLOR_BLACK);
-		dc.drawCircle(120,120,119);
+		//dc.drawCircle(120,120,119);
+		
 		/*
 		if(clockTime.sec%2==1){
 			dc.drawPoint(120,120);
@@ -202,15 +203,12 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		}
 		dc.fillCircle(120+Application.getApp().getProperty("DotsSize")*2+2,120,Application.getApp().getProperty("DotsSize"));
 		
-		
 		dc.setColor(Application.getApp().getProperty("ForegroundColor"),Graphics.COLOR_BLACK);
 		
 		var h = clockTime.hour;
 		var m = clockTime.min;
+		var s = clockTime.sec;
 		var c = 120;
-		
-
-		
 		
 		//5min ticks
 		for(var i=0;i<360;i+=30){
@@ -222,7 +220,6 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 			var y6 = c + r6 * Math.cos(Math.toRadians(i));
 			dc.drawLine(x5,y5,x6,y6);
 		}
-		
 		
 		//1min ticks
 		for(var i=0;i<360;i+=6){
@@ -237,35 +234,28 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		
 		dc.setPenWidth(Application.getApp().getProperty("HandsWidth"));
 		
-		
-		//dc.drawLine(50,50,100,100);
-		
-		
 		//minutes
-		//for(var i=-1.5;i<=1.5;i+=0.1){
-			var deg = -(m*360.0/60) - 180 ;
-			
-			var r1 = 99;
-			var r2 = 119;
-			var x1 = c + r1 * Math.sin(Math.toRadians(deg));
-			var y1 = c + r1 * Math.cos(Math.toRadians(deg));
-			var x2 = c + r2 * Math.sin(Math.toRadians(deg));
-			var y2 = c + r2 * Math.cos(Math.toRadians(deg));
-			dc.drawLine(x1,y1,x2,y2);
-		//}
+		var deg = -(m*360.0/60) - 180 ;
+		
+		var r1 = 99;
+		var r2 = 119;
+		var x1 = c + r1 * Math.sin(Math.toRadians(deg));
+		var y1 = c + r1 * Math.cos(Math.toRadians(deg));
+		var x2 = c + r2 * Math.sin(Math.toRadians(deg));
+		var y2 = c + r2 * Math.cos(Math.toRadians(deg));
+		dc.drawLine(x1,y1,x2,y2);
 		
 		//hours
-		//for(var i=-1.5;i<=1.5;i+=0.1){
-			var deg2 = -(h%12*360.0/12 + 30*m/60) - 180 ;
-			
-			var r3 = 108;
-			var r4 = 119;
-			var x3 = c + r3 * Math.sin(Math.toRadians(deg2));
-			var y3 = c + r3 * Math.cos(Math.toRadians(deg2));
-			var x4 = c + r4 * Math.sin(Math.toRadians(deg2));
-			var y4 = c + r4 * Math.cos(Math.toRadians(deg2));
-			dc.drawLine(x3,y3,x4,y4);
-		//}
+		var deg2 = -(h%12*360.0/12 + 30*m/60) - 180 ;
+		
+		var r3 = 108;
+		var r4 = 119;
+		var x3 = c + r3 * Math.sin(Math.toRadians(deg2));
+		var y3 = c + r3 * Math.cos(Math.toRadians(deg2));
+		var x4 = c + r4 * Math.sin(Math.toRadians(deg2));
+		var y4 = c + r4 * Math.cos(Math.toRadians(deg2));
+		dc.drawLine(x3,y3,x4,y4);
+
 		dc.setPenWidth(1);
     }
 
@@ -278,11 +268,13 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
+    	sleeping=false;
     	System.println("onExitSleep()");
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
+    	sleeping=true;
     	System.println("onEnterSleep()");
     }
 
