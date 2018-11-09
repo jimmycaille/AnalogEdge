@@ -10,6 +10,7 @@ using Toybox.ActivityMonitor;
 
 class AnalogEdgeView extends WatchUi.WatchFace {
 	var sleeping=false;
+	var customFont=null;
     function initialize() {
         WatchFace.initialize();
     	System.println("initialize()");
@@ -47,6 +48,7 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 	
     // Load your resources here
     function onLayout(dc) {
+    	customFont = WatchUi.loadResource(Rez.Fonts.customFont);
         setLayout(Rez.Layouts.WatchFace(dc));
     	System.println("onLayout()");
     }
@@ -60,6 +62,8 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
+        
+        
         
     	//get current time
         var clockTime = System.getClockTime();
@@ -257,6 +261,18 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		dc.drawLine(x3,y3,x4,y4);
 
 		dc.setPenWidth(1);
+		
+		
+		
+		
+		
+		
+		//test text
+        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+        dc.drawText(50,100,Graphics.FONT_LARGE,"test",Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(50,50,customFont,"123",Graphics.TEXT_JUSTIFY_CENTER);
+		
+		
     }
 
     // Called when this View is removed from the screen. Save the
