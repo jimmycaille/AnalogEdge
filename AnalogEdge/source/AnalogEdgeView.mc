@@ -70,65 +70,8 @@ class AnalogEdgeView extends WatchUi.WatchFace {
         
         System.println("onupdate() "+clockTime.hour + ":" + clockTime.min + ":" + clockTime.sec);
         
-        /*
-        //test sensor history
-        System.println("######### HR HISTORY ########");
-        var sensorIter = getHRIterator();
-        if(sensorIter != null){
-	        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
-	        System.println("#############################");
-	        var item = sensorIter.next();
-	        while(item != null){
-	        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
-	        	System.println(item.data + "BPM " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
-	        	item = sensorIter.next();
-	        }
-        }else{
-        	
-        }
-        System.println("######### TP HISTORY ########");
-        sensorIter = getTPIterator();
-        if(sensorIter != null){
-        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
-        System.println("#############################");
-        var item = sensorIter.next();
-        while(item != null){
-        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
-        	System.println(item.data + "deg " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
-        	item = sensorIter.next();
-        }
-        }else{
-        	
-        }
-        System.println("######### EL HISTORY ########");
-        sensorIter = getELIterator();
-        if(sensorIter != null){
-        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
-        System.println("#############################");
-        var item = sensorIter.next();
-        while(item != null){
-        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
-        	System.println(item.data + "m. " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
-        	item = sensorIter.next();
-        }
-        }else{
-        	
-        }
-        System.println("######### PR HISTORY ########");
-        sensorIter = getPRIterator();
-        if(sensorIter != null){
-        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
-        System.println("#############################");
-        var item = sensorIter.next();
-        while(item != null){
-        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
-        	System.println(item.data/100 + "hPa. " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
-        	item = sensorIter.next();
-        }
-        }else{
-        	
-        }
-        */
+        
+
         
         //System.println("hr: " + Sensor.Info.heartRate);
         
@@ -162,11 +105,9 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		dc.setColor(Application.getApp().getProperty("ForegroundColor"),Graphics.COLOR_BLACK);
 		//dc.drawCircle(120,120,119);
 		
-		/*
-		if(clockTime.sec%2==1){
-			dc.drawPoint(120,120);
-		}
-		*/
+		
+		
+		
 		
 		//Text: https://developer.garmin.com/downloads/connect-iq/monkey-c/doc/Toybox/Graphics.html
 		//dc.drawText(120, 60, Graphics.FONT_XTINY, "test", Graphics.TEXT_JUSTIFY_CENTER);
@@ -208,6 +149,11 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		dc.fillCircle(120+Application.getApp().getProperty("DotsSize")*2+2,120,Application.getApp().getProperty("DotsSize"));
 		
 		dc.setColor(Application.getApp().getProperty("ForegroundColor"),Graphics.COLOR_BLACK);
+		
+		//sec point
+		if(clockTime.sec%2==1){
+			dc.drawPoint(120,120);
+		}
 		
 		var h = clockTime.hour;
 		var m = clockTime.min;
@@ -269,10 +215,87 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		
 		//test text
         dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-        dc.drawText(50,100,Graphics.FONT_LARGE,"test",Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(50,50,customFont,"123",Graphics.TEXT_JUSTIFY_CENTER);
+        //dc.drawText(50,100,Graphics.FONT_LARGE,"test",Graphics.TEXT_JUSTIFY_CENTER);
+        //dc.drawText(50,50,customFont,"123",Graphics.TEXT_JUSTIFY_CENTER);
 		
 		
+		if(s==0){
+			//test sensor history
+			var chartHeight = 40;
+			var chartWidth  = 60;
+			var chartHRX    = 55;
+			var chartHRY    = 60;
+			dc.drawLine(chartHRX,chartHRY,chartHRX,chartHRY+chartHeight);
+			dc.drawLine(chartHRX,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY+chartHeight);
+			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY);
+			
+	        System.println("######### HR HISTORY ########");
+	        var sensorIter = getHRIterator();
+	        if(sensorIter != null){
+	        	dc.drawText(40,60,customFont,sensorIter.getMax(),Graphics.TEXT_JUSTIFY_LEFT);
+	        	dc.drawText(40,80,customFont,sensorIter.getMin(),Graphics.TEXT_JUSTIFY_LEFT);
+		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
+		        System.println("#############################");
+		        var item = sensorIter.next();
+		        while(item != null){
+		        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
+		        	System.println(item.data + "BPM " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
+		        	item = sensorIter.next();
+		        }
+	        }else{
+	        	
+	        }
+	        
+	        System.println("######### TP HISTORY ########");
+	        sensorIter = getTPIterator();
+	        if(sensorIter != null){
+	        	dc.drawText(200,60,customFont,sensorIter.getMax().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(200,80,customFont,sensorIter.getMin().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
+		        System.println("#############################");
+		        var item = sensorIter.next();
+		        while(item != null){
+		        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
+		        	System.println(item.data + "deg " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
+		        	item = sensorIter.next();
+		        }
+	        }else{
+	        	
+	        }
+	        System.println("######### EL HISTORY ########");
+	        sensorIter = getELIterator();
+	        if(sensorIter != null){
+	        	dc.drawText(40,140,customFont,sensorIter.getMax().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        	dc.drawText(40,160,customFont,sensorIter.getMin().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
+		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
+		        System.println("#############################");
+		        var item = sensorIter.next();
+		        while(item != null){
+		        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
+		        	System.println(item.data + "m. " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
+		        	item = sensorIter.next();
+		        }
+	        }else{
+	        	
+	        }
+	        System.println("######### PR HISTORY ########");
+	        sensorIter = getPRIterator();
+	        if(sensorIter != null){
+	        	dc.drawText(200,140,customFont,(sensorIter.getMax()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(200,160,customFont,(sensorIter.getMin()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
+		        System.println("#############################");
+		        var item = sensorIter.next();
+		        while(item != null){
+		        	var date = Gregorian.info(item.when, Time.FORMAT_SHORT);
+		        	System.println(item.data/100 + "hPa. " + date.day + "."+date.month + "."+date.year + " "+date.hour+":"+date.min+":"+date.sec);
+		        	item = sensorIter.next();
+		        }
+	        }else{
+	        	
+	        }
+        
+		}
     }
 
     // Called when this View is removed from the screen. Save the
