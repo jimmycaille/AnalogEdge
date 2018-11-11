@@ -8,9 +8,11 @@ using Toybox.SensorHistory;//better luck with that ?
 using Toybox.Time.Gregorian;
 using Toybox.ActivityMonitor;
 
+//id: 9ffda0d8-e437-427b-94c0-35a260b4d467
 class AnalogEdgeView extends WatchUi.WatchFace {
 	var sleeping=false;
 	var customFont=null;
+	var firstLook=false;
     function initialize() {
         WatchFace.initialize();
     	System.println("initialize()");
@@ -67,11 +69,16 @@ class AnalogEdgeView extends WatchUi.WatchFace {
         
     	//get current time
         var clockTime = System.getClockTime();
+        var h = clockTime.hour;
+		var m = clockTime.min;
+		var s = clockTime.sec;
+		var c = 120;
+		System.println("onupdate() "+clockTime.hour + ":" + clockTime.min + ":" + clockTime.sec);
         
-        System.println("onupdate() "+clockTime.hour + ":" + clockTime.min + ":" + clockTime.sec);
         
-        
-
+        if(s==0 || !firstLook){
+			firstLook=true;
+			System.println("updated  !");
         
         //System.println("hr: " + Sensor.Info.heartRate);
         
@@ -132,33 +139,32 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 		}else{
 			dc.setColor(Graphics.COLOR_DK_GRAY,Graphics.COLOR_DK_GRAY);
 		}
-		dc.fillCircle(120-Application.getApp().getProperty("DotsSize")*2-2,120,Application.getApp().getProperty("DotsSize"));
+		dc.fillCircle(120-Application.getApp().getProperty("DotsSize")*2-2,210,Application.getApp().getProperty("DotsSize"));
 		
 		if(System.getDeviceSettings().alarmCount>0){
 			dc.setColor(Graphics.COLOR_DK_GREEN,Graphics.COLOR_DK_GREEN);
 		}else{
 			dc.setColor(Graphics.COLOR_DK_GRAY,Graphics.COLOR_DK_GRAY);
 		}
-		dc.fillCircle(120,120,Application.getApp().getProperty("DotsSize"));
+		dc.fillCircle(120,210,Application.getApp().getProperty("DotsSize"));
 		
 		if(System.getDeviceSettings().notificationCount>0){
 			dc.setColor(Graphics.COLOR_DK_GREEN,Graphics.COLOR_DK_GREEN);
 		}else{
 			dc.setColor(Graphics.COLOR_DK_GRAY,Graphics.COLOR_DK_GRAY);
 		}
-		dc.fillCircle(120+Application.getApp().getProperty("DotsSize")*2+2,120,Application.getApp().getProperty("DotsSize"));
+		dc.fillCircle(120+Application.getApp().getProperty("DotsSize")*2+2,210,Application.getApp().getProperty("DotsSize"));
 		
 		dc.setColor(Application.getApp().getProperty("ForegroundColor"),Graphics.COLOR_BLACK);
 		
 		//sec point
+		/*
 		if(clockTime.sec%2==1){
 			dc.drawPoint(120,120);
 		}
+		*/
 		
-		var h = clockTime.hour;
-		var m = clockTime.min;
-		var s = clockTime.sec;
-		var c = 120;
+
 		
 		//5min ticks
 		for(var i=0;i<360;i+=30){
@@ -219,16 +225,46 @@ class AnalogEdgeView extends WatchUi.WatchFace {
         //dc.drawText(50,50,customFont,"123",Graphics.TEXT_JUSTIFY_CENTER);
 		
 		
-		if(s==0){
+		
 			//test sensor history
-			var chartHeight = 40;
-			var chartWidth  = 60;
-			var chartHRX    = 55;
-			var chartHRY    = 60;
+			var chartHeight = 40;//40
+			var chartWidth  = 140;//60
+			var chartHRX    = 50;//55
+			var chartHRY    = 40;//60
 			dc.drawLine(chartHRX,chartHRY,chartHRX,chartHRY+chartHeight);
 			dc.drawLine(chartHRX,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY+chartHeight);
-			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY);
+			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY-1);
 			
+	        var firstTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        var lastTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        var firstVal = 0.0;
+			var sensorIter = getHRIterator();
+			dc.setColor(Graphics.COLOR_RED,Graphics.COLOR_TRANSPARENT);
+			for(var i=chartWidth-1;i>0;i--){
+				var item = sensorIter.next();
+				if(item == null){
+					break;
+				}
+				if(item.data != null){
+					if(i==chartWidth-1 && item.when != null){
+						firstTime = item.when;
+						firstVal = item.data;
+					}
+					var value = (item.data-sensorIter.getMin())*chartHeight/(sensorIter.getMax()-sensorIter.getMin());
+					dc.drawLine(chartHRX+i,chartHRY+chartHeight-1,chartHRX+i,chartHRY+chartHeight-value);
+					lastTime = item.when;
+				}
+			}
+        	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+			dc.drawText(55,40,customFont,sensorIter.getMax(),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(55,65,customFont,sensorIter.getMin(),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(185,52,customFont,firstVal,Graphics.TEXT_JUSTIFY_RIGHT);
+	        
+	        var delta = firstTime.subtract(lastTime);
+			dc.drawText(120,65,customFont,(delta.value()/3600.0).format("%.2f"),Graphics.TEXT_JUSTIFY_CENTER);
+			
+			
+			/*
 	        System.println("######### HR HISTORY ########");
 	        var sensorIter = getHRIterator();
 	        if(sensorIter != null){
@@ -245,12 +281,50 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 	        }else{
 	        	
 	        }
+	        */
 	        
+	        chartHeight = 40;//40
+			chartWidth  = 140;//60
+			chartHRX    = 50;//122
+			chartHRY    = 80;//60
+			dc.drawLine(chartHRX,chartHRY,chartHRX,chartHRY+chartHeight);
+			dc.drawLine(chartHRX,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY+chartHeight);
+			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY-1);
+			
+			sensorIter = getTPIterator();
+	        firstTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        lastTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        firstVal = 0.0;
+			dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
+			for(var i=chartWidth-1;i>0;i--){
+				var item = sensorIter.next();
+				if(item == null){
+					break;
+				}
+				if(item.data != null){
+					if(i==chartWidth-1 && item.when != null){
+						firstTime = item.when;
+						firstVal = item.data;
+					}
+					var value = (item.data-sensorIter.getMin())*chartHeight/(sensorIter.getMax()-sensorIter.getMin());
+					dc.drawLine(chartHRX+i,chartHRY+chartHeight-1,chartHRX+i,chartHRY+chartHeight-value);
+					lastTime = item.when;
+				}
+			}
+        	dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(55,80,customFont,sensorIter.getMax().format("%.2f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(55,105,customFont,sensorIter.getMin().format("%.2f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(185,92,customFont,firstVal.format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        
+	        delta = firstTime.subtract(lastTime);
+			dc.drawText(120,105,customFont,(delta.value()/3600.0).format("%.2f"),Graphics.TEXT_JUSTIFY_CENTER);
+	        
+	        /*
 	        System.println("######### TP HISTORY ########");
 	        sensorIter = getTPIterator();
 	        if(sensorIter != null){
-	        	dc.drawText(200,60,customFont,sensorIter.getMax().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
-	        	dc.drawText(200,80,customFont,sensorIter.getMin().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(210,60,customFont,sensorIter.getMax().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(210,80,customFont,sensorIter.getMin().format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
 		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
 		        System.println("#############################");
 		        var item = sensorIter.next();
@@ -262,11 +336,50 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 	        }else{
 	        	
 	        }
+	        */
+	        
+	        chartHeight = 40;//40
+			chartWidth  = 140;//60
+			chartHRX    = 50;//55
+			chartHRY    = 120;//130
+			dc.drawLine(chartHRX,chartHRY,chartHRX,chartHRY+chartHeight);
+			dc.drawLine(chartHRX,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY+chartHeight);
+			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY-1);
+	        
+	        sensorIter = getELIterator();
+	        firstTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        lastTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        firstVal = 0.0;
+	        dc.setColor(Graphics.COLOR_GREEN,Graphics.COLOR_TRANSPARENT);
+			for(var i=chartWidth-1;i>0;i--){
+				var item = sensorIter.next();
+				if(item == null){
+					break;
+				}
+				if(item.data != null){
+					if(i==chartWidth-1 && item.when != null){
+						firstTime = item.when;
+						firstVal = item.data;
+					}
+					var value = (item.data-sensorIter.getMin())*chartHeight/(sensorIter.getMax()-sensorIter.getMin());
+					dc.drawLine(chartHRX+i,chartHRY+chartHeight-1,chartHRX+i,chartHRY+chartHeight-value);
+					lastTime = item.when;
+				}
+			}
+        	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(55,120,customFont,sensorIter.getMax().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(55,145,customFont,sensorIter.getMin().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(185,132,customFont,firstVal.format("%.1f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        
+	        delta = firstTime.subtract(lastTime);
+			dc.drawText(120,145,customFont,(delta.value()/3600.0).format("%.2f"),Graphics.TEXT_JUSTIFY_CENTER);
+	        
+	        /*
 	        System.println("######### EL HISTORY ########");
 	        sensorIter = getELIterator();
 	        if(sensorIter != null){
-	        	dc.drawText(40,140,customFont,sensorIter.getMax().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
-	        	dc.drawText(40,160,customFont,sensorIter.getMin().format("%.1f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        	dc.drawText(45,140,customFont,sensorIter.getMax().format("%.1f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(45,160,customFont,sensorIter.getMin().format("%.1f"),Graphics.TEXT_JUSTIFY_RIGHT);
 		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
 		        System.println("#############################");
 		        var item = sensorIter.next();
@@ -278,11 +391,51 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 	        }else{
 	        	
 	        }
+	        */
+	        
+	        chartHeight = 40;//40
+			chartWidth  = 140;//60
+			chartHRX    = 50;//122
+			chartHRY    = 160;//130
+			dc.drawLine(chartHRX,chartHRY,chartHRX,chartHRY+chartHeight);
+			dc.drawLine(chartHRX,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY+chartHeight);
+			dc.drawLine(chartHRX+chartWidth,chartHRY+chartHeight,chartHRX+chartWidth,chartHRY-1);
+	        
+	        sensorIter = getPRIterator();
+		    
+	        dc.setColor(Graphics.COLOR_BLUE,Graphics.COLOR_TRANSPARENT);
+	        firstTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        lastTime = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+	        firstVal = 0.0;
+	        System.println(firstTime.day + "."+firstTime.month + "."+firstTime.year + " "+firstTime.hour+":"+firstTime.min+":"+firstTime.sec);
+			for(var i=chartWidth-1;i>0;i--){
+				var item = sensorIter.next();
+				if(item == null){
+					break;
+				}
+				if(item.data != null){
+					if(i==chartWidth-1 && item.when != null){
+						firstTime = item.when;
+						firstVal  = item.data;
+					}
+					var value = (item.data-sensorIter.getMin())*chartHeight/(sensorIter.getMax()-sensorIter.getMin());
+					dc.drawLine(chartHRX+i,chartHRY+chartHeight-1,chartHRX+i,chartHRY+chartHeight-value);
+					lastTime = item.when;
+				}
+			}
+        	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(55,160,customFont,(sensorIter.getMax()/100.0).format("%.2f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(55,185,customFont,(sensorIter.getMin()/100.0).format("%.2f"),Graphics.TEXT_JUSTIFY_LEFT);
+	        dc.drawText(185,172,customFont,(firstVal/100.0).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        
+	        delta = firstTime.subtract(lastTime);
+			dc.drawText(120,185,customFont,(delta.value()/3600.0).format("%.2f"),Graphics.TEXT_JUSTIFY_CENTER);
+	        /*
 	        System.println("######### PR HISTORY ########");
 	        sensorIter = getPRIterator();
 	        if(sensorIter != null){
-	        	dc.drawText(200,140,customFont,(sensorIter.getMax()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
-	        	dc.drawText(200,160,customFont,(sensorIter.getMin()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(210,140,customFont,(sensorIter.getMax()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
+	        	dc.drawText(210,160,customFont,(sensorIter.getMin()/100).format("%.2f"),Graphics.TEXT_JUSTIFY_RIGHT);
 		        System.println("Min:"+sensorIter.getMin()+" Max:"+sensorIter.getMax());
 		        System.println("#############################");
 		        var item = sensorIter.next();
@@ -294,6 +447,7 @@ class AnalogEdgeView extends WatchUi.WatchFace {
 	        }else{
 	        	
 	        }
+	        */
         
 		}
     }
