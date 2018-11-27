@@ -372,8 +372,8 @@
 <entry endPc="268441533" name="c" stackId="6" startPc="268436180"/>
 <entry endPc="268441534" name="dc" stackId="1" startPc="268436176"/>
 <entry endPc="268441997" name="rez_cmp_local_bitmap_TimeLabel" stackId="3" startPc="268441644"/>
-<entry endPc="268441997" name="rez_cmp_local_custom_drawable_18104220064569730297" stackId="2" startPc="268441644"/>
 <entry endPc="268441997" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="4" startPc="268441644"/>
+<entry endPc="268441997" name="rez_cmp_local_custom_drawable_17041027051120282069" stackId="2" startPc="268441644"/>
 <entry endPc="268441998" name="dc" stackId="1" startPc="268441632"/>
 </localVars>
 <annotations/>
