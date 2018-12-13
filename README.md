@@ -1,20 +1,37 @@
-# AnalogEdge : Garmin Watchface
+# AnalogEdge : Garmin watch Face
 
 ## Screenshots
-![alt text](https://raw.githubusercontent.com/jimmycaille/AnalogEdge/master/Screenshots/AnalogEdge_2.png "Screenshot 1")
+![Screenshot 1](https://raw.githubusercontent.com/jimmycaille/AnalogEdge/master/Screenshots/readme.png "Screenshot 1")
 
 ## Compatible devices
+* Approach S60
+* D2 Charlie
+* D2 Delta
+* D2 Delta PX
+* D2 Delta S60
+* Descent Mk1
+* Fénix 5 / quatix 5
+* Fénix 5 Plus
+* Fénix 5S Plus
+* Fénix 5X tactix Charlie
+* Fénix 5X Plus
+* Forerunner 645
+* Forerunner 645 Music
+* Forerunner 935
 * Vivoactive 3
 * Vivoactive 3 Music
 
+(all 240x240px round screens)
+
 ## Features
 * Displays the time on the outer ring of the watch
+* Graphs showing sensor history in the centered
 
 ## Project structure
 - README.md      -> that the file you are reading now
 - AnalogEdge     -> Eclipse project
 - Builds         -> Each release
-- Screenshots    -> Images of the face
+- Screenshots    -> Images of the face and settings
 
 ## Log
 ### 0.0.8b
